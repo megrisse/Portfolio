@@ -49,12 +49,8 @@ function App() {
           <p className="section__text__p2">Software Engineer</p>
           <div className="text-container">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
+              I'm a Software Engineer based in Morocco, fueled by the joy of problem-solving and software creation. 
+              My craft is coding, and beyond it, I find peace in nature, the aroma of coffee, and the world of art.
               </p>
             </div>
             <br></br>
@@ -73,7 +69,6 @@ function App() {
             <img src="./assets/github.png" alt="My Github profile" className="icon" onClick={() => window.open('https://github.com/megrisse')} />
           </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#about'} />
       </section>
       <br></br>
       <br></br>
@@ -103,17 +98,18 @@ function App() {
             </div>
             <div className="text-container">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
+              I'm a software engineering student at 1337-UM6P (42 Network) with a passion for problem-solving and creating efficient algorithms and data structures. 
+              Over the past two years, I've honed my skills in C and C++, gaining a solid foundation in these languages.
+              In addition to my work with C and C++, I have extensive experience in web development. I'm proficient in JavaScript and TypeScript, and I'm well-versed in popular frameworks such as React and Next.js. 
+              My frontend skills extend to HTML and CSS, allowing me to create visually appealing and user-friendly interfaces.
+              I also practice designing to expand my skills in web development, creating visually appealing and user-friendly interfaces.
+              On the backend, I'm adept at using Node.js, Nest.js, and Express.js to build robust and scalable applications. I also have experience with Docker, 
+              which has been instrumental in my development workflow, allowing me to create, deploy, and run applications in containers.
+              I'm constantly seeking new challenges and opportunities to expand my skill set. Whether it's solving complex problems or diving into new technologies, I'm always eager to learn and grow as a software engineer.
               </p>
             </div>
           </div>
         </div>
-        <img src="./assets/Arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#Skills'} />
       </section>
       <section id="Skills">
         <p className="section__text__p1">Explore My</p>
@@ -177,6 +173,13 @@ function App() {
                     <p>Intermediate</p>
                   </div>
                 </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
               </div>
             </div>
             <div className="details-container">
@@ -235,7 +238,6 @@ function App() {
             </div>
           </div>
         </div>
-        <img src="./assets/Arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#projects'} />
       </section>
       <section id="projects">
         <p className="section__text__p1">Browse My Recent</p>
@@ -244,12 +246,12 @@ function App() {
           <div className="about-containers">
             <div className="details-container color-container">
               <div className="article-container">
-                <img src="./assets/Docker.png" alt="Project 1" className="project-img" />
+                <img src="./assets/Inception.png" alt="Project 1" className="project-img" />
               </div>
               <h2 className="experience-sub-title project-title">INCEPTION</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Hic quis reprehenderit et laborum,
-                 rem, dolore eum quod voluptate exercitationem nobis
+              <p>
+              This project demonstrates a lightweight WordPress system built on the LEMP stack 
+              (Nginx, MariaDB, PHP) using Docker and Docker Compose.
               </p>
               <div className="btn-container">
                 <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/megrisse/42_Inception', '_blank')}>
@@ -262,30 +264,32 @@ function App() {
             </div>
             <div className="details-container color-container">
               <div className="article-container">
-                <img src="./assets/project.png" alt="Project 2" className="project-img" />
+                <img src="./assets/Web-Server.png" alt="Project 2" className="project-img" />
               </div>
-              <h2 className="experience-sub-title project-title">Project Two</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Hic quis reprehenderit et laborum,
-                 rem, dolore eum quod voluptate exercitationem nobis
+              <h2 className="experience-sub-title project-title">Web Server</h2>
+              <p>
+                A C++98 compatible HTTP web server from scratch. The web server can handle HTTP GET, HEAD, POST, and DELETE Requests, 
+                and can serve static files from a specified root directory or dynamic content using CGI.
               </p>
               <div className="btn-container">
-                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
+                <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/megrisse/webserv')}>
                   Github
                 </button>
-                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
+                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/megrisse/webserv'}>
                   Live Demo
                 </button>
               </div>
             </div>
             <div className="details-container color-container">
               <div className="article-container">
-                <img src="./assets/project.png" alt="Project 3" className="project-img" />
+                <img src="./assets/Pong.png" alt="Project 3" className="project-img" />
               </div>
-              <h2 className="experience-sub-title project-title">Project Three</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Hic quis reprehenderit et laborum,
-                 rem, dolore eum quod voluptate exercitationem nobis
+              <h2 className="experience-sub-title project-title">Online Pong</h2>
+              <p>
+                a real-time online Pong tournament website, 
+                allowing users to compete and connect with each other.
+                <br></br>
+                Technologies Backend: Nest.js Frontend: React, Next.js Database: PostgreSQL Deployment: Docker
               </p>
               <div className="btn-container">
                 <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
@@ -298,7 +302,6 @@ function App() {
             </div>
           </div>
         </div>
-        <img src="./assets/Arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#contact'} />
       </section>
       <section id="contact">
         <p className="section__text__p1">Get in Touch</p>
