@@ -41,16 +41,29 @@ function App() {
       </nav>
       <section id="profile">
         <div className="section__pic-container">
-          <img src="./assets/megrisse.png" alt="John Doe profile" />
+          <img src="./assets/megrisse.png" alt="megrisse profile" />
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title">Merouane Grissen</h1>
           <p className="section__text__p2">Software Engineer</p>
+          <div className="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                reprehenderit et laborum, rem, dolore eum quod voluptate
+                exercitationem nobis, nihil esse debitis maxime facere minus sint
+                delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                reiciendis ea magnam? Nulla, impedit fuga!
+              </p>
+            </div>
+            <br></br>
           <div className="btn-container">
-            <button className="btn btn-color-2" onClick={() => window.open('./assets/Resume.pdf')}>
+            <a href='./assets/Resume.pdf' download="Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-color-2">
               Download CV
             </button>
+            </a>
             <button className="btn btn-color-1" onClick={() => window.location.href = './#contact'}>
               Contact Info
             </button>
@@ -60,7 +73,14 @@ function App() {
             <img src="./assets/github.png" alt="My Github profile" className="icon" onClick={() => window.open('https://github.com/megrisse')} />
           </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#about'} />
       </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <section id="about">
         <p className="section__text__p1">Get To Know More</p>
         <h1 className="title">About Me</h1>
@@ -93,7 +113,7 @@ function App() {
             </div>
           </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#experience'} />
+        <img src="./assets/Arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#Skills'} />
       </section>
       <section id="Skills">
         <p className="section__text__p1">Explore My</p>
@@ -215,7 +235,7 @@ function App() {
             </div>
           </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#projects'} />
+        <img src="./assets/Arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#projects'} />
       </section>
       <section id="projects">
         <p className="section__text__p1">Browse My Recent</p>
@@ -224,11 +244,11 @@ function App() {
           <div className="about-containers">
             <div className="details-container color-container">
               <div className="article-container">
-                <img src="./assets/project.png" alt="Project 1" className="project-img" />
+                <img src="./assets/Docker.png" alt="Project 1" className="project-img" />
               </div>
-              <h2 className="experience-sub-title project-title">Project One</h2>
+              <h2 className="experience-sub-title project-title">INCEPTION</h2>
               <div className="btn-container">
-                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
+                <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/megrisse/42_Inception', '_blank')}>
                   Github
                 </button>
                 <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
@@ -266,7 +286,7 @@ function App() {
             </div>
           </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#contact'} />
+        <img src="./assets/Arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href = './#contact'} />
       </section>
       <section id="contact">
         <p className="section__text__p1">Get in Touch</p>
