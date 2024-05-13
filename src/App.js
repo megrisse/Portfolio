@@ -41,7 +41,7 @@ function App() {
       </nav>
       <section id="profile">
         <div className="section__pic-container">
-          <img src="./assets/megrisse.png" alt="megrisse profile" />
+          <img src="./assets/IMG5.png" alt="megrisse profile" />
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
@@ -86,14 +86,14 @@ function App() {
         <h1 className="title">About Me</h1>
         <div className="section-container">
           <div className="section__pic-container">
-            <img src="./assets/megrisse.png" alt="Profile" className="about-pic" />
+            <img src="./assets/IMG5.png" alt="Profile" className="about-pic" />
           </div>
           <div className="about-details-container">
             <div className="about-containers">
               <div className="details-container">
                 <img src="./assets/experience.png" alt="Experience icon" className="icon" />
                 <h3>Experience</h3>
-                <p>2+ years <br />Software Development</p>
+                <p>2+                           years <br />Software Development</p>
               </div>
               <div className="details-container">
                 <img src="./assets/education.png" alt="Education icon" className="icon" />
@@ -186,14 +186,14 @@ function App() {
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>PostgreSQL</h3>
-                    <p>Intermediate</p>
+                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>MongoDB</h3>
-                    <p>Intermediate</p>
+                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
@@ -247,6 +247,10 @@ function App() {
                 <img src="./assets/Docker.png" alt="Project 1" className="project-img" />
               </div>
               <h2 className="experience-sub-title project-title">INCEPTION</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Hic quis reprehenderit et laborum,
+                 rem, dolore eum quod voluptate exercitationem nobis
+              </p>
               <div className="btn-container">
                 <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/megrisse/42_Inception', '_blank')}>
                   Github
@@ -261,6 +265,10 @@ function App() {
                 <img src="./assets/project.png" alt="Project 2" className="project-img" />
               </div>
               <h2 className="experience-sub-title project-title">Project Two</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Hic quis reprehenderit et laborum,
+                 rem, dolore eum quod voluptate exercitationem nobis
+              </p>
               <div className="btn-container">
                 <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
                   Github
@@ -275,6 +283,10 @@ function App() {
                 <img src="./assets/project.png" alt="Project 3" className="project-img" />
               </div>
               <h2 className="experience-sub-title project-title">Project Three</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Hic quis reprehenderit et laborum,
+                 rem, dolore eum quod voluptate exercitationem nobis
+              </p>
               <div className="btn-container">
                 <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
                   Github
@@ -295,6 +307,7 @@ function App() {
           <div className="contact-info-container">
             <img src="./assets/email.png" alt="Email icon" className="icon contact-icon email-icon" />
             <p><a href="mailto:mgrissen9@gmail.com">mgrissen9@gmail.com</a></p>
+            <br></br>
           </div>
           <div className="contact-info-container">
             <img src="./assets/linkedin.png" alt="LinkedIn icon" className="icon contact-icon" />
@@ -303,6 +316,7 @@ function App() {
           <div className="contact-info-container">
             <img src="./assets/video-call.png" alt="LinkedIn icon" className="icon contact-icon" />
             <p><a href="https://cal.com/megrisse/30min" target="_blank" rel='noreferrer'>Book a call</a></p>
+            <br></br>
           </div>
         </div>
       </section>
