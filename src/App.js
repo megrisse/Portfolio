@@ -292,10 +292,10 @@ function App() {
                 Technologies Backend: Nest.js Frontend: React, Next.js Database: PostgreSQL Deployment: Docker
               </p>
               <div className="btn-container">
-                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
+                <button className="btn btn-color-2 project-btn" onClick={() => window.open("https://github.com/megrisse/ft_transcendence")}>
                   Github
                 </button>
-                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
+                <button className="btn btn-color-2 project-btn" onClick={() => window.open("https://github.com/megrisse/ft_transcendence")}>
                   Live Demo
                 </button>
               </div>
