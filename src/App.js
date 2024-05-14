@@ -88,7 +88,7 @@ function App() {
               <div className="details-container">
                 <img src="./assets/experience.png" alt="Experience icon" className="icon" />
                 <h3>Experience</h3>
-                <p>Currently i'm fresh <br />Software engineering</p>
+                <p>Currently i'm fresh</p>
               </div>
               <div className="details-container">
                 <img src="./assets/education.png" alt="Education icon" className="icon" />
