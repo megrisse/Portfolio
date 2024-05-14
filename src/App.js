@@ -46,11 +46,11 @@ function App() {
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title">Merouane Grissen</h1>
-          <p className="section__text__p2">Software Engineer</p>
+          <p className="section__text__p2">Full-Stack developer</p>
           <div className="text-container">
               <p>
-              I'm a Software Engineer based in Morocco, fueled by the joy of problem-solving and software creation. 
-              My craft is coding, and beyond it, I find peace in nature, the aroma of coffee, and the world of art.
+              I'm a fresh and enthusiastic full-stack developer passionate about building efficient and scalable web applications. 
+              I’m currently a Software Engineering student at 1337-UM6P (42 Network), where I’ve developed a strong foundation in computer science and web development.
               </p>
             </div>
             <br></br>
@@ -88,7 +88,7 @@ function App() {
               <div className="details-container">
                 <img src="./assets/experience.png" alt="Experience icon" className="icon" />
                 <h3>Experience</h3>
-                <p>2+                           years <br />Software Development</p>
+                <p>Currently i'm fresh <br />Software engineering</p>
               </div>
               <div className="details-container">
                 <img src="./assets/education.png" alt="Education icon" className="icon" />
@@ -117,67 +117,54 @@ function App() {
         <div className="experience-details-container">
           <div className="about-containers">
             <div className="details-container">
-              <h2 className="experience-sub-title"> Low-Level Development</h2>
-              <div className="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
-                  <div>
-                    <h3>C</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
-                  <div>
-                    <h3>C++</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div className="details-container">
               <h2 className="experience-sub-title">Frontend Development</h2>
               <div className="article-container">
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>HTML</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>CSS</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>JavaScript</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>TypeScript</h3>
-                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
+                  <div>
+                    <h3>React.js</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
+                  <div>
+                    <h3>Next.js</h3>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>Material UI</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>Figma</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
               </div>
@@ -189,49 +176,42 @@ function App() {
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>PostgreSQL</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>MongoDB</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>Node JS</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>Nest JS</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>Express JS</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>Git</h3>
-                    <p>Experienced</p>
                   </div>
                 </article>
                 <article>
                   <img src="./assets/checkmark.png" alt="Experience icon" className="icon" />
                   <div>
                     <h3>Docker</h3>
-                    <p>Intermediate</p>
                   </div>
                 </article>
               </div>
@@ -317,7 +297,7 @@ function App() {
             <p><a href="https://www.linkedin.com/in/merouane-grissen-7971b21b3/" target="_blank" rel='noreferrer'>LinkedIn</a></p>
           </div>
           <div className="contact-info-container">
-            <img src="./assets/video-call.png" alt="LinkedIn icon" className="icon contact-icon" />
+            <img src="./assets/Call1.png" alt="LinkedIn icon" className="icon contact-icon" />
             <p><a href="https://cal.com/megrisse/30min" target="_blank" rel='noreferrer'>Book a call</a></p>
             <br></br>
           </div>
