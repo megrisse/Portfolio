@@ -41,7 +41,7 @@ function App() {
       </nav>
       <section id="profile">
         <div className="section__pic-container">
-          <img src="./assets/IMG5.png" alt="megrisse profile" />
+          <img src="./assets/IMG9.png" alt="megrisse profile" />
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
@@ -55,7 +55,7 @@ function App() {
             </div>
             <br></br>
           <div className="btn-container">
-            <a href='./assets/Resume.pdf' download="Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href='./assets/Resume.pdf' target="_blank" rel="noopener noreferrer">
             <button className="btn btn-color-2">
               Download CV
             </button>
@@ -237,9 +237,6 @@ function App() {
                 <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/megrisse/42_Inception', '_blank')}>
                   Github
                 </button>
-                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/'}>
-                  Live Demo
-                </button>
               </div>
             </div>
             <div className="details-container color-container">
@@ -254,9 +251,6 @@ function App() {
               <div className="btn-container">
                 <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/megrisse/webserv')}>
                   Github
-                </button>
-                <button className="btn btn-color-2 project-btn" onClick={() => window.location.href = 'https://github.com/megrisse/webserv'}>
-                  Live Demo
                 </button>
               </div>
             </div>
@@ -274,9 +268,6 @@ function App() {
               <div className="btn-container">
                 <button className="btn btn-color-2 project-btn" onClick={() => window.open("https://github.com/megrisse/ft_transcendence")}>
                   Github
-                </button>
-                <button className="btn btn-color-2 project-btn" onClick={() => window.open("https://github.com/megrisse/ft_transcendence")}>
-                  Live Demo
                 </button>
               </div>
             </div>
