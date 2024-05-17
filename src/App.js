@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './mediaqueries.css';
+
 
 function App() {
   const toggleMenu = () => {
@@ -10,10 +11,19 @@ function App() {
     icon.classList.toggle("open");
   };
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+  
   return (
-    <div>
+    <div className={`App ${isDarkMode ? 'dark-mode p-dark' : ''}`}>
       <nav id="desktop-nav">
         <div className="logo">MG</div>
+            <button className="btn btn-color-2" onClick={toggleDarkMode}>
+                {isDarkMode ? "Light" : "Dark"} Mode
+            </button>
         <div>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
@@ -25,6 +35,9 @@ function App() {
       </nav>
       <nav id="hamburger-nav">
         <div className="logo">MG</div>
+        <button className="btn btn-color-2" onClick={toggleDarkMode}>
+              {isDarkMode ? "Light" : "Dark"} Mode
+        </button>
         <div className="hamburger-menu">
           <div className="hamburger-icon" onClick={toggleMenu}>
             <span></span>
@@ -70,12 +83,6 @@ function App() {
           </div>
         </div>
       </section>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <section id="about">
         <p className="section__text__p1">Get To Know More</p>
         <h1 className="title">About Me</h1>
