@@ -9,8 +9,9 @@
   }
 
   #about .section__pic-container img {
-    max-width: 50%;
-    height: auto;
+
+      width: auto;
+      height: 46vw;
   }
 
   @media (max-height: 650px) {
