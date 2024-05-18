@@ -85,9 +85,6 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <section id="about">
         <p className="section__text__p1">Get To Know More</p>
         <h1 className="title">About Me</h1>
