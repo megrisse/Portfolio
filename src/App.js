@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import './mediaqueries.css';
 
-
 function App() {
   const toggleMenu = () => {
     const menu = document.querySelector(".menu-links");
@@ -11,17 +10,18 @@ function App() {
     icon.classList.toggle("open");
   };
 
+
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-  
+
   return (
     <div className={`App ${isDarkMode ? 'dark-mode p-dark' : ''}`}>
       <nav id="desktop-nav">
         <div className="logo">MG</div>
-            <button className="btn btn-color-2" onClick={toggleDarkMode}>
+        <button className="btn btn-color-2" onClick={toggleDarkMode}>
                 {isDarkMode ? "Light" : "Dark"} Mode
             </button>
         <div>
@@ -36,7 +36,7 @@ function App() {
       <nav id="hamburger-nav">
         <div className="logo">MG</div>
         <button className="btn btn-color-2" onClick={toggleDarkMode}>
-              {isDarkMode ? "Light" : "Dark"} Mode
+                {isDarkMode ? "Light" : "Dark"} Mode
         </button>
         <div className="hamburger-menu">
           <div className="hamburger-icon" onClick={toggleMenu}>
@@ -62,8 +62,7 @@ function App() {
           <p className="section__text__p2">Full-Stack developer</p>
           <div className="text-container">
               <p>
-              I'm a fresh and enthusiastic full-stack developer passionate about building efficient and scalable web applications. 
-              I’m currently a Software Engineering student at 1337-UM6P (42 Network), where I’ve developed a strong foundation in computer science and web development.
+              I'm a fresh and enthusiastic full-stack developer passionate about building efficient and scalable web applications.
               </p>
             </div>
             <br></br>
@@ -83,6 +82,12 @@ function App() {
           </div>
         </div>
       </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <section id="about">
         <p className="section__text__p1">Get To Know More</p>
         <h1 className="title">About Me</h1>
@@ -100,20 +105,14 @@ function App() {
               <div className="details-container">
                 <img src="./assets/education.png" alt="Education icon" className="icon" />
                 <h3>Education</h3>
-                <p>1337-UM6P(42 Network)<br />Bachelor Software Engineering</p>
+                <p>1337-UM6P<br />Bachelor Software Engineering</p>
               </div>
             </div>
             <div className="text-container">
               <p>
-              I'm a software engineering student at 1337-UM6P (42 Network) with a passion for problem-solving and creating efficient algorithms and data structures. 
-              Over the past two years, I've honed my skills in C and C++, gaining a solid foundation in these languages.
-              In addition to my work with C and C++, I have extensive experience in web development. I'm proficient in JavaScript and TypeScript, and I'm well-versed in popular frameworks such as React and Next.js. 
-              My frontend skills extend to HTML and CSS, allowing me to create visually appealing and user-friendly interfaces.
-              I also practice designing to expand my skills in web development, creating visually appealing and user-friendly interfaces.
-              On the backend, I'm adept at using Node.js, Nest.js, and Express.js to build robust and scalable applications. I also have experience with Docker, 
-              which has been instrumental in my development workflow, allowing me to create, deploy, and run applications in containers.
-              I'm constantly seeking new challenges and opportunities to expand my skill set. Whether it's solving complex problems or diving into new technologies, I'm always eager to learn and grow as a software engineer.
-              </p>
+              I'm Merouane Grissen, a Full-Stack Developer with expertise in JavaScript, TypeScript, React, Next.js, Node.js, Nest.js, and Docker. As a student at 1337-UM6P, 
+              I have experience in problem-solving with C and C++. I am passionate about creating responsive, user-friendly web applications and continually expanding my skill set.
+            </p>
             </div>
           </div>
         </div>

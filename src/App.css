@@ -27,6 +27,8 @@ p {
   color: #fff;
 }
 
+
+
 .dark-mode .menu-links a {
 
   color: white;
@@ -35,13 +37,11 @@ p {
 .dark-mode .icon {
 
   background-color: white;
-  border-color: white;
-  border-style: groove;
+  outline: 2px solid white;
   border-radius: 2rem;
 }
 
 .dark-mode .email-icon {
-
   height: 2rem;
 }
 
@@ -139,10 +139,11 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background: transparent;
+  background: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
+  border-radius: 15px;
   transition: all 0.3 ease-in-out;
 }
 
