@@ -1,0 +1,255 @@
+/* Skills section container */
+#Skills {
+  padding: 2rem 0;
+}
+
+/* Filter buttons container */
+.skills-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+/* Filter button styling */
+.filter-btn {
+  padding: 0.7rem 1.5rem;
+  background: transparent;
+  border: none; /* Removed border */
+  border-radius: 30px;
+  font-size: var(
+    --font-regular,
+    1rem
+  ); /* Use global font size variable if available */
+  font-family: inherit; /* Use inherited font family */
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow instead of border */
+  margin: 0.25rem;
+}
+
+.filter-btn:hover {
+  background-color: rgba(53, 53, 53, 0.1);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Skills grid layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(220px, 1fr)
+  ); /* Increased from 180px to 220px */
+  gap: 1.5rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual skill card */
+.skill-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem; /* Reduced vertical padding from 1rem to 0.75rem */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(163, 163, 163, 0.3);
+  min-height: 60px; /* Reduced from 80px to 60px */
+  gap: 1rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for frontend cards */
+.skill-card.frontend {
+  border-left: 4px solid #61dafb; /* React blue */
+}
+
+/* Style for backend cards */
+.skill-card.backend {
+  border-left: 4px solid #3c873a; /* Node green */
+}
+
+/* Style for tools cards */
+.skill-card.tools {
+  border-left: 4px solid #f05032; /* Git orange */
+}
+
+/* Style for languages cards */
+.skill-card.languages {
+  border-left: 4px solid #a8b9cc; /* C language blue-gray */
+}
+
+/* Skill icon styling */
+.skill-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon size adjustment */
+.skill-icon {
+  font-size: 1.8rem; /* Increased font size for the icon */
+  width: auto; /* Auto width */
+  height: auto; /* Auto height */
+}
+
+/* Skill name styling */
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left; /* Changed from center to left */
+  margin: 0; /* Remove any margin */
+}
+
+/* Animation for card appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-card {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Dark mode compatibility */
+.dark-mode .skill-card {
+  background-color: #111;
+  border-color: #333; /* This applies to the general border */
+}
+
+/* Custom hover effect for dark mode with white glow */
+.dark-mode .skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15); /* White glow in dark mode */
+}
+
+/* Preserve original left border colors in dark mode */
+.dark-mode .skill-card.frontend {
+  border-left: 4px solid #61dafb; /* Keep React blue in dark mode */
+}
+
+.dark-mode .skill-card.backend {
+  border-left: 4px solid #3c873a; /* Keep Node green in dark mode */
+}
+
+.dark-mode .skill-card.tools {
+  border-left: 4px solid #f05032; /* Keep Git orange in dark mode */
+}
+
+.dark-mode .skill-card.languages {
+  border-left: 4px solid #a8b9cc; /* Keep C language blue-gray in dark mode */
+}
+
+.dark-mode .filter-btn {
+  color: #eee;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1); /* Subtle shadow for dark mode */
+}
+
+.dark-mode .filter-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .filter-btn.active {
+  background-color: #eee;
+  color: #111;
+}
+
+/* Dark mode styling for icon container */
+.dark-mode .skill-icon-container {
+  background-color: white; /* Keep white background in dark mode */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow in dark mode */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(180px, 1fr)
+    ); /* Increased from 150px to 180px */
+    padding: 0 1rem;
+  }
+
+  .skill-card {
+    padding: 0.6rem 1rem;
+    min-height: 50px; /* Reduced from 70px to 50px */
+  }
+
+  .skill-icon {
+    font-size: 1.5rem; /* Smaller on mobile but still proportional */
+  }
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills-about-containers {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 1.5rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  min-width: 450px;
+  max-width: 48%;
+}
+
+.skills-article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: flex-start;
+}
+
+.skills-article {
+  display: flex;
+  width: 10rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Dark mode compatibility */
+.dark-mode .skills-details-container {
+  background-color: #111;
+  border-color: #333;
+}

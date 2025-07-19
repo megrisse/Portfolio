@@ -1,0 +1,320 @@
+:root {
+  --dark-gray: #3d3d3d;
+  --medium-gray: #6e6e6e;
+  --light-gray: #a0a0a0;
+  --cream-white: #f8f8f2;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%; /* Changed from max-width to width: 100% */
+  margin: 0 auto;
+  gap: 4rem; /* Increased from 2rem to 4rem for more spacing */
+  padding: 4rem 4rem;
+}
+
+/* If you have a global container class, you might need this too */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Make sure section also takes full width */
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section__pic-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--dark-gray, #3d3d3d);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.section__pic-container:hover {
+  transform: scale(1.03);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.image-backdrop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section__pic-container:hover .image-backdrop {
+  opacity: 1;
+}
+
+.section__text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.section__text__p1 {
+  font-size: 1.2rem;
+  color: var(--medium-gray, #6e6e6e);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0.3rem 0 1rem;
+  background: linear-gradient(90deg, #3d3d3d 0%, #6e6e6e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.typing-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  min-height: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-gray, #3d3d3d);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.bio-text {
+  min-height: 4.8rem; /* Prevents layout shift during typing animation */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--medium-gray, #6e6e6e);
+}
+
+@media (max-width: 768px) {
+  .bio-text {
+    min-height: 7.2rem; /* Adjust for smaller screens where text wraps more */
+  }
+}
+
+.skill-highlights {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  /* flex-wrap: wrap; */
+}
+
+.skill-item span {
+  /* font-weight: 600; */
+  color: var(--dark-gray, #3d3d3d);
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--cream-white, #f8f8f2);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: transform 0.2s, background-color 0.2s;
+  border: 1px solid var(--light-gray, #a0a0a0);
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  background-color: rgba(61, 61, 61, 0.05);
+}
+
+.skill-icon {
+  color: var(--dark-gray, #3d3d3d);
+  font-size: 1.2rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1.25rem; /* Slightly reduced gap */
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1.25rem; /* Reduced padding for smaller button size */
+  font-size: 0.95rem; /* Slightly smaller text */
+  font-weight: 500; /* Keep the same weight */
+  border-radius: 25px; /* Slightly smaller radius to match the smaller size */
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  min-width: 120px; /* Reduced minimum width */
+  letter-spacing: 0.3px; /* Reduced letter spacing */
+  font-family: inherit; /* Ensure consistent font family */
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary {
+  background-color: var(--dark-gray, #3d3d3d);
+  color: var(--cream-white, #f8f8f2);
+}
+
+.btn-secondary {
+  background-color: var(--cream-white, #f8f8f2);
+  border: 1px solid var(--dark-gray, #3d3d3d); /* Changed from 2px to 1px to match skill items */
+  color: var(--dark-gray, #3d3d3d);
+}
+
+.btn-link {
+  text-decoration: none; /* Remove underline in normal state */
+}
+
+.btn-link:hover {
+  text-decoration: none; /* Explicitly remove underline on hover */
+}
+
+/* Add these new animations and styles to your existing CSS file */
+
+/* Title slide-in and slide-out animations */
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+/* Title cursor */
+.title-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  background-color: var(--dark-gray, #3d3d3d);
+}
+
+.title-cursor.visible {
+  opacity: 1;
+}
+
+.title-cursor.hidden {
+  opacity: 0;
+}
+
+/* Add these styles for the title and bio cursors */
+
+.title-cursor,
+.bio-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  background-color: var(--dark-gray, #3d3d3d);
+}
+
+.title-cursor.visible,
+.bio-cursor.visible {
+  opacity: 1;
+}
+
+.title-cursor.hidden,
+.bio-cursor.hidden {
+  opacity: 0;
+}
+
+/* Ensure the title container has proper spacing */
+.title-container {
+  min-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Ensure text container has proper styling */
+.text-container {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem; /* Added spacing for vertical layout */
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem; /* Additional bottom margin in mobile view */
+  }
+
+  .skill-highlights {
+    justify-content: center;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+}
